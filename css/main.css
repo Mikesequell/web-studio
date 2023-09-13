@@ -156,7 +156,7 @@ footer {
 
 /* our works */
 
-.our-works .a {
+.our-works a {
   color: var(--main-text-color);
   text-decoration: none;
 }

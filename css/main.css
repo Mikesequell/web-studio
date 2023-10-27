@@ -423,47 +423,6 @@ input[type="radio"].visually-hidden {
   fill:var(--accent-color);
 }
 
-/* .our-clients-list > .item > .company-item {
-  display: inline-block;
-  width: 106px;
-  height: 60px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.item > .company1 {
-  background-image: url(../img/group1.svg);
-}
-
-.item > .company2 {
-  background-image: url(../img/group2.svg);
-}
-
-.item > .company3 {
-  background-image: url(../img/group3.svg);
-}
-
-.item > .company4 {
-  background-image: url(../img/group4.svg);
-}
-
-.item > .company5 {
-  background-image: url(../img/group5.svg);
-}
-
-.item > .company6 {
-  background-image: url(../img/group6.svg);
-}
-
-.our-clients-list > .item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 /* button */
 
 .button {

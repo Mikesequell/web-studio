@@ -18,7 +18,7 @@
 
   <body>
     <header>
-      <div class="container outline">
+      <div class="container">
         <div class="header">
           <a href="./index.html" class="logo"
             ><span class="logo-accent">Web</span>Studio</a
@@ -36,7 +36,13 @@
           </nav>
 
           <address class="address">
+            <svg class="mail-icon">
+              <use href="/img/sprite.svg#envelope"></use>
+            </svg>
             <a href="" class="link mail-link">info@devstudio.com</a>
+            <svg class="smartphone-icon">
+              <use href="/img/sprite.svg#smartphone"></use>
+            </svg>
             <a href="+380961111111" class="link phone-link"
               >+38 096 111 11 11</a
             >
@@ -62,10 +68,15 @@
 
       <!-- advantages -->
       <section class="section">
-        <div class="container outline">
+        <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="advantages list">
             <li class="item">
+              <div class="thumb">
+                <svg class="advantages-icon" width="70px" height="70px">
+                  <use href="/img/sprite.svg#antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantages-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -73,6 +84,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="advantages-icon" width="70px" height="70px">
+                  <use href="/img/sprite.svg#clock-1"></use>
+                </svg>
+              </div>
               <h3 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantages-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -80,12 +96,22 @@
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="advantages-icon" width="70px" height="70px">
+                  <use href="/img/sprite.svg#diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="advantages-title">ПЛАНУВАННЯ</h3>
               <p class="advantages-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
+              <div class="thumb">
+                <svg class="advantages-icon" width="70px" height="70px">
+                  <use href="/img/sprite.svg#astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantages-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -98,7 +124,7 @@
 
       <!-- our activities -->
       <section class="section">
-        <div class="container outline">
+        <div class="container">
           <h2 class="our-activities">Чим ми займаємося</h2>
           <ul class="list activities">
             <li class="item">
@@ -123,45 +149,141 @@
               <img src=".\img\img4.jpg" width="270px" alt="" class="employee" />
               <p class="team-member">Ігор Дем'яненко<br /></p>
               <p class="member-position">Product Designer</p>
-              <ul class="list member-links">
-                <li class="item"><a href="" class="instagram"></a></li>
-                <li class="item"><a href="" class="twitter"></a></li>
-                <li class="item"><a href="" class="facebook"></a></li>
-                <li class="item"><a href="" class="linkedin"></a></li>
-              </ul>
+              <ul class="list social">
+              <li class="item thumb">
+                <a href="" class="instagram" aria-label="instagram">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="twitter" aria-label="twitter">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="facebook" aria-label="facebook">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="linkedin" aria-label="linkedin">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="item">
               <img src=".\img\img5.jpg" width="270px" alt="" class="employee" />
               <p class="team-member">Ольга Рєпіна<br /></p>
               <p class="member-position">Frontend Developer</p>
-              <ul class="list member-links">
-                <li class="item"><a href="" class="instagram"></a></li>
-                <li class="item"><a href="" class="twitter"></a></li>
-                <li class="item"><a href="" class="facebook"></a></li>
-                <li class="item"><a href="" class="linkedin"></a></li>
-              </ul>
+              <ul class="list social">
+              <li class="item thumb">
+                <a href="" class="instagram" aria-label="instagram">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="twitter" aria-label="twitter">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="facebook" aria-label="facebook">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="linkedin" aria-label="linkedin">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="item">
               <img src=".\img\img6.jpg" width="270px" alt="" class="employee" />
               <p class="team-member">Микола Тарасов<br /></p>
               <p class="member-position">Marketing</p>
-              <ul class="list member-links">
-                <li class="item"><a href="" class="instagram"></a></li>
-                <li class="item"><a href="" class="twitter"></a></li>
-                <li class="item"><a href="" class="facebook"></a></li>
-                <li class="item"><a href="" class="linkedin"></a></li>
-              </ul>
+              <ul class="list social">
+              <li class="item thumb">
+                <a href="" class="instagram" aria-label="instagram">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="twitter" aria-label="twitter">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="facebook" aria-label="facebook">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="linkedin" aria-label="linkedin">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             </li>
             <li class="item">
               <img src=".\img\img7.jpg" width="270px" alt="" class="employee" />
               <p class="team-member">Михайло Єрмаков<br /></p>
               <p class="member-position">UI Designer</p>
-              <ul class="list member-links">
-                <li class="item"><a href="" class="instagram"></a></li>
-                <li class="item"><a href="" class="twitter"></a></li>
-                <li class="item"><a href="" class="facebook"></a></li>
-                <li class="item"><a href="" class="linkedin"></a></li>
-              </ul>
+              <ul class="list social">
+              <li class="item thumb">
+                <a href="" class="instagram" aria-label="instagram">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="twitter" aria-label="twitter">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="facebook" aria-label="facebook">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="linkedin" aria-label="linkedin">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
             </li>
           </ul>
         </div>
@@ -169,22 +291,22 @@
 
       <!-- our clients -->
       <section class="section-top-bottom">
-        <div class="container outline">
+        <div class="container">
           <h2 class="our-clients-title">Постійні клієнти</h2>
           <ul class="list our-clients-list">
-            <li class="item"><div class="company-item company1"></div></li>
-            <li class="item"><div class="company-item company2"></div></li>
-            <li class="item"><div class="company-item company3"></div></li>
-            <li class="item"><div class="company-item company4"></div></li>
-            <li class="item"><div class="company-item company5"></div></li>
-            <li class="item"><div class="company-item company6"></div></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company1"></use></svg></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company2"></use></svg></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company3"></use></svg></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company4"></use></svg></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company5"></use></svg></li>
+            <li class="item"><svg class="icon"><use href="/img/sprite.svg#company6"></use></svg></li>
           </ul>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container outline">
+      <div class="container">
         <div class="footer-main">
           <div class="footer-left-column">
             <a href="./index.html" class="logo logo-footer"
@@ -210,11 +332,35 @@
           </div>
           <div class="footer-right-column">
             <h3 class="right-column-title">приєднуйтесь</h3>
-            <ul class="list our-links">
-              <li class="item"><a href="" class="instagram"></a></li>
-              <li class="item"><a href="" class="twitter"></a></li>
-              <li class="item"><a href="" class="facebook"></a></li>
-              <li class="item"><a href="" class="linkedin"></a></li>
+            <ul class="list social">
+              <li class="item thumb">
+                <a href="" class="instagram" aria-label="instagram">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="twitter" aria-label="twitter">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="facebook" aria-label="facebook">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item thumb">
+                <a href="" class="linkedin" aria-label="linkedin">
+                  <svg class="icon">
+                    <use href="/img/sprite.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

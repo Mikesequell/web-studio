@@ -7,6 +7,7 @@
   --tertiary-text-color60: #ffffff99;
 
   --background-color: #2f303a;
+  --background-color-semi-transparent: #2f303acc;
   --background-color-our-links: #ffffff1a;
   --button-secondary-background-color: #f5f4fa;
   --border-color: #afb1b8;
@@ -109,6 +110,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav .item {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
@@ -118,28 +120,42 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.active-page {
-  color: var(--accent-color);
+.nav .active-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+
+  border-radius: 2px;
 }
 
-.address {
-  margin-left: auto;
+.header-links {
+  display: flex;
 }
 
-.address .link {
-  color: var(--main-text-color);
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  text-decoration: none;
-
+.header-links .item {
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
 }
 
-.address > .link:last-child {
+.heder-address .item:last-child {
   margin-right: 0;
+}
+
+.heder-address {
+  margin-left: auto;
+}
+
+.heder-address .link {
+  color: var(--main-text-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .footer-address .link {
@@ -192,9 +208,9 @@ input[type="radio"].visually-hidden {
   fill: var(--main-text-color);
 }
 
-.mail-icon:hover {
+/* .mail-icon:hover {
   fill: var(--accent-color);
-}
+} */
 
 .smartphone-icon {
   width: 10px;
@@ -203,9 +219,9 @@ input[type="radio"].visually-hidden {
   fill: var(--main-text-color);
 }
 
-.smartphone-icon:hover {
+/* .smartphone-icon:hover {
   fill: var(--accent-color);
-}
+} */
 
 /* logo */
 
@@ -322,12 +338,33 @@ input[type="radio"].visually-hidden {
 /* маленькое контентное поле списка под картинкой */
 
 .activities .item {
+  position: relative;
   margin-left: 0;
   margin-right: 30px;
 }
 
 .activities .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.activities .activities-title {
+  display: inline-block;
+  width: 100%;
+  /* height: 70px; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--background-color-semi-transparent);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--tertiary-text-color);
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* our team */
@@ -384,7 +421,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 16px;
 }
 
-
 /* our clients */
 
 .our-clients-list {
@@ -407,7 +443,6 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
 }
 
-
 .our-clients-list .icon {
   box-sizing: content-box;
   width: 106px;
@@ -420,7 +455,7 @@ input[type="radio"].visually-hidden {
 }
 
 .our-clients-list .icon:hover {
-  fill:var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* button */
@@ -576,6 +611,22 @@ input[type="radio"].visually-hidden {
 
 .link:hover,
 .link:focus {
+  color: var(--accent-color);
+}
+
+.mail-block:hover .mail-icon {
+  fill: var(--accent-color);
+}
+
+.mail-block:hover .mail-link {
+  color: var(--accent-color);
+}
+
+.telephone-block:hover .smartphone-icon {
+  fill: var(--accent-color);
+}
+
+.telephone-block:hover .phone-link {
   color: var(--accent-color);
 }
 
